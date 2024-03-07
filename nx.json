@@ -92,13 +92,20 @@
   "generators": {
     "@nx/react": {
       "application": {
+        "style": "css",
+        "linter": "eslint",
+        "bundler": "vite",
         "babel": true
       },
       "library": {
+        "style": "scss",
+        "linter": "eslint",
         "unitTestRunner": "none",
         "bundler": "vite",
-        "publishable": true,
-        "style": "scss"
+        "publishable": true
+      },
+      "component": {
+        "style": "css"
       }
     },
     "@nx/js": {
@@ -106,6 +113,12 @@
         "unitTestRunner": "none",
         "bundler": "vite",
         "publishable": true
+      }
+    },
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
       }
     }
   }

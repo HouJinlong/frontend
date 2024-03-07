@@ -42,3 +42,6 @@ Thumbs.db
 
 **/.dumi/tmp-production
 **/.dumi/tmp
+
+# Next.js
+.next
